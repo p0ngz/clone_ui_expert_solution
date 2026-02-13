@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
   --height-navbar: 100px;
-  --height-footer: max(400px, fit-content);
 
   --color-navbar-contact: #edecfd;
   --color-primary-red: #f04e4e;
@@ -11,20 +10,74 @@
   --color-primary-green: #00c853;
   --color-text-blue: #2d2dce;
   --color-contact-bg: #edecfd;
-
-  --font-family-mitr: 'Mitr', sans-serif;
+  --color-footer-heading: #9d97e5;
+  --color-footer-icon: #4843e7 --font-family-mitr: "Mitr", sans-serif;
 }
+
+#footer h1,
+#license  p {
+  color: var(--color-footer-heading);
+}
+
+/* Reusable mask icon utility */
+.mask-icon {
+  background-color: white;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}
+
+.mask-icon-facebook {
+  mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/5f61fe1a83877f54c3944e1e_fb.png);
+  -webkit-mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/5f61fe1a83877f54c3944e1e_fb.png);
+}
+
+.mask-icon-line {
+  mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/60264ca65b0be8516560271f_Exclude.png);
+  -webkit-mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/60264ca65b0be8516560271f_Exclude.png);
+}
+
+.mask-icon-mail {
+  mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/5f62059ef9b9af7cf5cbad11_mail.png);
+  -webkit-mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/5f62059ef9b9af7cf5cbad11_mail.png);
+}
+
+.mask-icon-instagram {
+  mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/62b9638fde9010cfb207f9c6_Instagram_black.png);
+  -webkit-mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/62b9638fde9010cfb207f9c6_Instagram_black.png);
+}
+
+.mask-icon-youtube {
+  mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/62bd7f16c16504527c03c630_Youtube_white.png);
+  -webkit-mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/62bd7f16c16504527c03c630_Youtube_white.png);
+}
+
+.mask-icon-tiktok {
+  mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/62bd7ef7c16504e3e103c614_Tiktok_white.png);
+  -webkit-mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/62bd7ef7c16504e3e103c614_Tiktok_white.png);
+}
+
+.mask-icon-phone {
+  mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/674e9357f95404e27ca90714_icon_phonecall%20(
+      1
+    ).png);
+  -webkit-mask-image: url(https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/674e9357f95404e27ca90714_icon_phonecall%20(
+      1
+    ).png);
+}
+
 :root {
-  font-family: 'Mitr', sans-serif;
+  font-family: "Mitr", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
