@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -8,14 +9,19 @@
   --color-primary-red: #f04e4e;
   --color-primary-blue: #2d2dce;
   --color-primary-green: #00c853;
+  --background-primary-red: #f04e4e;
+  --background-primary-blue: #2d2dce;
+  --background-primary-green: #00c853;
   --color-text-blue: #2d2dce;
   --color-contact-bg: #edecfd;
   --color-footer-heading: #9d97e5;
+  --color-card-title: #9f9cf8;
+  --color-card-btn: #4843e7;
   --color-footer-icon: #4843e7 --font-family-mitr: "Mitr", sans-serif;
 }
 
 #footer h1,
-#license  p {
+#license p {
   color: var(--color-footer-heading);
 }
 

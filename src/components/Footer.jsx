@@ -297,14 +297,14 @@ const Footer = () => {
               <img
                 src="https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/633beda0c3b7123436a7adce_app-store.svg"
                 alt="Download on App Store"
-                className="w-full h-10 object-cover"
+                className="w-full  h-14 object-contain"
               />
             </a>
             <a id="google-store" href="#" className="block">
               <img
                 src="https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/633bed967c9820e6547a6f64_google-play.svg"
                 alt="Get it on Google Play"
-                className="h-10 object-contain"
+                className="w-full h-14 object-contain"
               />
             </a>
           </div>
