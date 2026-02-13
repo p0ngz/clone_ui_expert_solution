@@ -87,11 +87,11 @@ const statisticData = [
 ];
 const DetailSection = () => {
   return (
-    <div id="detail-section" className="bg-[linear-gradient(180deg,_#fee,_#eaeafa)] border-t-4 border-[#ff5151] py-20">
+    <div id="detail-section" className="bg-[linear-gradient(180deg,_#fee,_#eaeafa)] border-t-4 border-[#ff5151]  py-20 sm:p-20 md:p-10">
       <div id="detail-container" className="my-20">
         <div
           id="video-container"
-          className="w-full px-20 flex flex-col items-center justify-center gap-3 py-20"
+          className="w-full flex flex-col items-center justify-center gap-3 px-10 py-20"
         >
           <h1 className="text-2xl md:text-3xl text-center text-text-blue font-semibold">
             เริ่มใช้งานโอ้โหแชท ระบบจัดการแชทอันดับ 1
@@ -103,7 +103,7 @@ const DetailSection = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
-            className="w-full h-78 md:h-80 lg:h-85 rounded-2xl"
+            className="w-full h-78 md:h-80 lg:h-85 rounded-2xl shadow-xl/20"
           ></iframe>{" "}
         </div>
         <div id="partner-business">
@@ -117,7 +117,7 @@ const DetailSection = () => {
           </div>
           <div
             id="list-business-container"
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-14 lg:px-16"
+            className="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-8  md:px-5lg:px-16"
           >
             {partnerDetail.map((partner, index) => (
               <Card
@@ -132,11 +132,11 @@ const DetailSection = () => {
           </div>
         </div>
       </div>
-      <div id="statistic-container" className="my-20">
+      <div id="statistic-container" className="mt-20">
         <h1 className="text-2xl md:text-3xl text-center text-text-blue font-semibold">
           สถิติการใช้งาน จากลูกค้าที่ไว้วางใจเรา
         </h1>
-        <div className="w-full grid grid-cols-2 lg:grid-cols-4  px-20 lg:px-10 mt-10">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:px-10 mt-10">
           {statisticData.map((stat, index) => (
             <BoxStatistic
               key={index}
