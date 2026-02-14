@@ -2,7 +2,7 @@ const IntroductionSection = () => {
   return (
     <div
       id="introduction-section"
-      className="bg-[url('https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/63f3415d2d342c664717419c_hero_bg_blurry.webp')] lg:py-10 bg-no-repeat bg-scroll bg-[length:1440px] bg-[position:50%_90%]"
+      className="bg-[url('https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/63f3415d2d342c664717419c_hero_bg_blurry.webp')] lg:pt-10 bg-no-repeat bg-scroll bg-[length:1440px] bg-[position:50%_90%]"
     >
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div
@@ -37,13 +37,13 @@ const IntroductionSection = () => {
           >
             <button
               id="test-case-btn"
-              className="py-3 rounded-lg w-full text-center text-white bg-primary-blue"
+              className="py-3 rounded-lg w-full text-center text-white bg-primary-blue hover:bg-primary-red transition-colors hover:cursor-pointer"
             >
               ทดลองใช้พรี คลิก!
             </button>
             <button
               id="test-showcase-btn "
-              className="py-3 rounded-lg w-full text-center text-white bg-primary-red"
+              className="py-3 rounded-lg w-full text-center text-white bg-primary-red hover:bg-primary-blue transition-colors hover:cursor-pointer"
             >
               บัตรสาธิจการใช้งานฟรี
             </button>

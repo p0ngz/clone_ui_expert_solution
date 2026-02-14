@@ -4,7 +4,7 @@ const BoxExperience = ({ iconUrl, title, active = false, onClick }) => {
   useEffect(() => {}, [active]);
 
   const baseClasses =
-    "flex flex-col items-center justify-center py-3 rounded-2xl border transition-all shadow-sm text-red-500 border-red-100 hover:border-red-400 focus:outline-none focus:ring-2 focus:ring-red-200 w-full";
+    "flex flex-col items-center justify-center py-3 rounded-2xl border transition-all shadow-sm text-red-500 border-red-100 hover:border-red-400 hover:cursor-pointer focus:outline-none focus:ring-2 focus:ring-red-200 w-full";
 
   return (
     <button

@@ -18,7 +18,7 @@ const SupportServiceSection = () => {
               <p>ทุกวันจันทร์-ศุกร์ 10.00-18.00 น.</p>
             </div>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 w-full max-w-sm lg:max-w-md">
-              <button className="flex-1 rounded-lg bg-red-100 hover:bg-red-200 transition-colors">
+              <button className="flex-1 rounded-lg bg-red-100 hover:bg-red-200 hover:cursor-pointer transition-colors">
                 <a
                   href="tel:020964654"
                   className="flex flex-col items-center gap-2 px-5 py-2.5 text-sm font-light"
@@ -31,7 +31,7 @@ const SupportServiceSection = () => {
                   02-096-4654
                 </a>
               </button>
-              <button className="flex-1 rounded-lg bg-red-100 hover:bg-red-200 transition-colors">
+              <button className="flex-1 rounded-lg bg-red-100 hover:bg-red-200 hover:cursor-pointer transition-colors">
                 <a
                   href="mailto:hello@oho.chat"
                   className="flex flex-col items-center gap-2 px-5 py-2.5 text-sm font-light"

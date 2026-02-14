@@ -87,7 +87,7 @@ const statisticData = [
 ];
 const DetailSection = () => {
   return (
-    <div id="detail-section" className="bg-[linear-gradient(180deg,_#fee,_#eaeafa)] border-t-4 border-[#ff5151]  py-20 sm:p-20 md:p-10">
+    <div id="detail-section" className="bg-[linear-gradient(180deg,_#fee,_#eaeafa)]  py-20 sm:p-20 md:p-10">
       <div id="detail-container" className="my-20">
         <div
           id="video-container"
@@ -96,23 +96,25 @@ const DetailSection = () => {
           <h1 className="text-2xl md:text-3xl text-center text-text-blue font-semibold">
             เริ่มใช้งานโอ้โหแชท ระบบจัดการแชทอันดับ 1
           </h1>
-          <iframe
-            src="https://www.youtube.com/embed/T18Hff2GNEk?list=PLE6ctx0JUnfdVWl3AF20GvIuVcc_2qPQU"
-            title="เริ่มต้นใช้งาน Oho Chat | ขั้นที่ 1 การสร้างบัญชีผู้ใช้งาน"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            className="w-full h-78 md:h-80 lg:h-85 rounded-2xl shadow-xl/20"
-          ></iframe>{" "}
+          <div className="relative w-full max-w-4xl mx-auto aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/T18Hff2GNEk?list=PLE6ctx0JUnfdVWl3AF20GvIuVcc_2qPQU"
+              title="เริ่มต้นใช้งาน Oho Chat | ขั้นที่ 1 การสร้างบัญชีผู้ใช้งาน"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+              className="absolute inset-0 w-full h-full rounded-2xl shadow-xl/20"
+            ></iframe>
+          </div>
         </div>
         <div id="partner-business">
           <div className="flex flex-col items-center justify-center gap-2 py-10 ">
             <h1 className="text-2xl md:text-3xl text-center text-text-blue font-semibold">
               จัดการแชท Omnichannel ให้ธุรกิจชั้นนำ
             </h1>
-            <h2 className="text-xl md:text-3xl text-center text-gray-400 font-semibold">
-              จัดการแชท Omnichannel ให้ธุรกิจชั้นนำ
+            <h2 className="text-xl md:text-xl text-center text-gray-400 font-semibold">
+              ทั้งการตลาด การขาย การบริการครบ จบในที่เดียว
             </h2>
           </div>
           <div

@@ -160,13 +160,13 @@ const Footer = () => {
             <div className="w-full sm:w-1/2 flex  justify-center gap-3">
               <button
                 id="call-demo"
-                className="w-full py-4 sm:py-2 text-white text-sm font-medium border-1 border-white rounded-lg hover:bg-white hover:text-blue-600 transition"
+                className="w-full py-4 sm:py-2 text-white text-sm font-medium border-1 border-white rounded-lg hover:bg-white hover:text-blue-600 hover:cursor-pointer transition"
               >
                 โทรนัดเวลากลับ
               </button>
               <button
                 id="register"
-                className="w-full py-4 sm:py-2 text-white text-sm font-medium bg-red-400 rounded-lg hover:bg-red-600 transition"
+                className="w-full py-4 sm:py-2 text-white text-sm font-medium bg-red-400 rounded-lg hover:bg-red-600 hover:cursor-pointer transition"
               >
                 สมัครใช้งานฟรี
               </button>
@@ -293,14 +293,14 @@ const Footer = () => {
             id="store-container"
             className="w-full flex gap-5 justify-center items-center mt-10"
           >
-            <a id="app-store" href="#" className="block">
+            <a id="app-store" href="#" className="block hover:cursor-pointer">
               <img
                 src="https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/633beda0c3b7123436a7adce_app-store.svg"
                 alt="Download on App Store"
                 className="w-full  h-14 object-contain"
               />
             </a>
-            <a id="google-store" href="#" className="block">
+            <a id="google-store" href="#" className="block hover:cursor-pointer">
               <img
                 src="https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/633bed967c9820e6547a6f64_google-play.svg"
                 alt="Get it on Google Play"

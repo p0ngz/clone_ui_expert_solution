@@ -18,7 +18,7 @@ const BoxPartnerPill = ({ imageUrl, description, alt = "partner", linkUrl, wide 
   );
 
   if (linkUrl) return (
-    <a href={linkUrl} className="inline-block">
+    <a href={linkUrl} className="inline-block hover:cursor-pointer">
       {content}
     </a>
   );

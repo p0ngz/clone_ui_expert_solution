@@ -8,7 +8,10 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav id="navbar" className="w-full max-w-full sticky top-0 z-50 shadow-sm overflow-hidden">
+    <nav
+      id="navbar"
+      className="w-full max-w-full sticky top-0 z-50 shadow-sm overflow-hidden"
+    >
       {/* xs screen */}
       <div className="lg:hidden">
         <div className="flex items-center justify-between px-4 w-full min-h-full">
@@ -24,7 +27,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <div className="w-20 h-full">
               <button
-                className="text-white text-xs px-4 pt-2 w-full  leading-tight text-center flex flex-col items-center"
+                className="text-white text-xs px-4 pt-2 w-full  leading-tight text-center flex flex-col items-center hover:cursor-pointer"
                 style={{
                   backgroundColor: "#f04e4e",
                 }}
@@ -39,7 +42,7 @@ const Navbar = () => {
             <div className="w-16 h-full flex justify-center">
               <button
                 onClick={() => setMenuOpen(!menuOpen)}
-                className="w-8 h-full"
+                className="w-8 h-full hover:cursor-pointer"
               >
                 <MenuIcon
                   fontSize="medium"
@@ -97,72 +100,50 @@ const Navbar = () => {
         </div>
 
         {/* Navigation row */}
-        <div className="flex items-center justify-between ps-16 h-24 xl:h-16  w-full" >
+        <div className="flex items-center justify-between ps-6 h-24 xl:h-16 2xl:h-auto w-full">
           {/* Left: Nav links */}
           <div className="flex items-center gap-6 flex-shrink-0">
-            <button
-              className="flex items-center gap-1  text-sm hover:opacity-80"
-            >
+            <div className="h-full flex items-center">
+              <img
+                src="https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/5f6af1c6ab7d726c8ba6ca15_Master%20Logo.svg"
+                alt="Oho-chat"
+                className="w-32 min-h-10 object-cover"
+              />
+            </div>
+            <button className="flex items-center gap-1  text-sm hover:opacity-80 hover:cursor-pointer">
               ฟีเจอร์ <ArrowDropDownIcon fontSize="small" />
             </button>
-            <a
-              href="#"
-              className=" text-sm hover:opacity-80"
-            >
+            <a href="#" className=" text-sm hover:opacity-80 hover:cursor-pointer">
               ราคา
             </a>
-            <button
-              className="flex items-center gap-1  text-sm hover:opacity-80"
-            >
+            <button className="flex items-center gap-1  text-sm hover:opacity-80 hover:cursor-pointer">
               โซลูชั่น <ArrowDropDownIcon fontSize="small" />
             </button>
-            <a
-              href="#"
-              className=" text-sm hover:opacity-80"
-            >
+            <a href="#" className=" text-sm hover:opacity-80 hover:cursor-pointer">
               บทความ
             </a>
-            <a
-              href="#"
-              className=" text-sm hover:opacity-80"
-            >
+            <a href="#" className=" text-sm hover:opacity-80 hover:cursor-pointer">
               คำถามที่พบบ่อย
             </a>
-            <a
-              href="#"
-              className=" text-sm hover:opacity-80"
-            >
+            <a href="#" className=" text-sm hover:opacity-80 hover:cursor-pointer">
               คู่มือการใช้งาน
             </a>
-            <a
-              href="#"
-              className="text-sm hover:opacity-80"
-            >
+            <a href="#" className="text-sm hover:opacity-80 hover:cursor-pointer">
               รู้จักเรา
             </a>
           </div>
 
           {/* Right: Buttons + Logo */}
           <div className="h-full flex items-center justify-end gap-4 flex-shrink-0 py-2">
-            <button
-              className="h-full border-2 border-blue-500 text-blue-600 bg-white px-10 xl:px-6 py-2 rounded-md hover:bg-blue-50 transition text-sm"
-            >
+            <button className="h-full border-2 border-blue-500 text-blue-600 bg-white hover:border-1 hover:border-primary-red hover:text-primary-red px-10 xl:px-6 py-2 rounded-md  hover:cursor-pointer transition text-sm">
               เข้าสู่ระบบ
             </button>
-            <button
-              className="h-full bg-primary-blue text-white text-sm px-5 py-2 rounded-md hover:opacity-90 transition"
-            >
+            <button className="h-full bg-primary-blue hover:bg-primary-red text-white text-sm px-5 py-2 rounded-md hover:opacity-90 hover:cursor-pointer transition">
               สมัครใช้งานฟรี!
             </button>
-            <div className="h-full flex items-center">
-              <img
-                src="https://cdn.prod.website-files.com/5f5b1b9ddb3ade8e0cc58758/5f6af1c6ab7d726c8ba6ca15_Master%20Logo.svg"
-                alt="Oho-chat"
-                className="w-32 min-h-12 object-cover"
-              />
-            </div>
+
             <button
-              className="h-full text-white text-xs font-semibold px-5 py-2  leading-tight text-center"
+              className="h-full text-white text-xs font-semibold px-5 py-2  leading-tight text-center hover:cursor-pointer"
               style={{ backgroundColor: "#f04e4e" }}
             >
               ธุรกิจ

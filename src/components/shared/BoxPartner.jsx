@@ -11,7 +11,7 @@ const BoxPartner = ({ imageUrl, title, linkUrl }) => {
 
   if (linkUrl) {
     return (
-      <a href={linkUrl} className="inline-block">
+      <a href={linkUrl} className="inline-block hover:cursor-pointer">
         {content}
       </a>
     );

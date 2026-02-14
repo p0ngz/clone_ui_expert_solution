@@ -51,7 +51,7 @@ const Card = ({
         </div>
 
         {/* Read More Button */}
-        <button className="w-full py-2 mt-4 border-1 border-card-btn text-card-btn rounded-lg  hover:bg-text-blue hover:text-white transition">
+        <button className="w-full py-2 mt-4 border-1 border-card-btn text-card-btn rounded-lg  hover:bg-text-blue hover:text-white hover:cursor-pointer transition">
           อ่านเพิ่มเติม
         </button>
       </div>
