@@ -1,3 +1,5 @@
+import { AnimatePresence, motion } from "framer-motion";
+
 const IntroductionSection = () => {
   return (
     <div
@@ -35,18 +37,35 @@ const IntroductionSection = () => {
             id="button-container"
             className="w-full flex justify-center items-center gap-3 sm:gap-5"
           >
-            <button
-              id="test-case-btn"
-              className="py-3 rounded-lg w-full text-center text-white bg-primary-blue hover:bg-primary-red transition-colors hover:cursor-pointer"
-            >
-              ทดลองใช้พรี คลิก!
-            </button>
-            <button
-              id="test-showcase-btn "
-              className="py-3 rounded-lg w-full text-center text-white bg-primary-red hover:bg-primary-blue transition-colors hover:cursor-pointer"
-            >
-              บัตรสาธิจการใช้งานฟรี
-            </button>
+            <AnimatePresence>
+              <motion.button
+                id="test-case-btn"
+                className="py-3 rounded-lg w-full text-center text-white bg-primary-blue hover:bg-primary-red transition-colors hover:cursor-pointer"
+                animate={{ y: [0, -15, 0] }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              >
+                ทดลองใช้พรี คลิก!
+              </motion.button>
+            </AnimatePresence>
+
+            <AnimatePresence>
+              <motion.button
+                id="test-case-btn"
+                className="py-3 rounded-lg w-full text-center text-white bg-primary-red hover:bg-primary-blue transition-colors hover:cursor-pointer"
+                animate={{ y: [0, -15, 0] }}
+                transition={{
+                  duration: 1,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              >
+                บัตรสาธิจการใช้งานฟรี
+              </motion.button>
+            </AnimatePresence>
           </div>
           <div id="contact-info" className="w-full flex justify-start">
             <p className="text-lg text-gray-400">
@@ -66,8 +85,7 @@ const IntroductionSection = () => {
       </div>
       <div
         id="download-container"
-        className="w-full flex flex-col items-center justify-center gap-5 py-10 lg:pt-0 mx-auto bg-linear-to-b from-white to-[#f7dce0]"
-
+        className="w-full flex flex-col items-center justify-center gap-5 py-10 lg:pt-0 mx-auto "
       >
         <h2 className="text-center text-gray-400 text-lg ">
           ดาวน์โหลดแอปพลิเคชัน Oho Chat ได้ทั้งใน iOS และ Android
